@@ -4,6 +4,7 @@
   "description": "A website for customers to see different eservices provided and see the reports of the services they have sselected.",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "SIT725_Team",
