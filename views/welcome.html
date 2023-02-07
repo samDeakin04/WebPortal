@@ -5,24 +5,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+  <meta name="Team 7" content="Navin, Mahidhar">
   <meta name="generator" content="Hugo 0.108.0">
-  <title>Carousel Template · Bootstrap v5.3</title>
-
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+  <title>AEGIS</title>
 
 
 
 
 
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
 
   <!-- Custom styles for this template -->
-  <link href="css/carousel.css" rel="stylesheet">
+
   <link href="css/custom.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -30,7 +37,9 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-green">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Carousel</a>
+
+        <a class="navbar-brand" href="#">AEGIS</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -41,16 +50,19 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+
+              <a class="nav-link" href="/eservice">E-Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="/faq">FAQ</a>
             </li>
+
           </ul>
-          <form class="d-flex" role="search">
+          <!-- <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          </form> -->
+
         </div>
       </div>
     </nav>
@@ -61,155 +73,100 @@
       <div class="container-fluid col-xl-10 col-xxl-8 px-4 py-5 ">
         <div class="row align-items-center g-lg-5 py-5">
           <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-light">
+
+            <form class="p-4 p-md-5 border rounded-3 bg-light" >
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="email" class="form-control" id="floatingUserName" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
               </div>
-              <div class="checkbox mb-3">
+              <!-- <div class="checkbox mb-3">
                 <label>
                   <input type="checkbox" value="remember-me"> Remember me
                 </label>
-              </div>
-              <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+              </div> -->
+              <a  id="loginSubmit" class="w-100 btn btn-lg btn-primary" >Sign up</a>
+
               <hr class="my-4">
               <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
             </form>
           </div>
           <div class="col-lg-7 text-center text-lg-start">
-            <h1 class="display-4 fw-bold lh-1 mb-3">Vertically centered hero sign-up form</h1>
-            <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each
-              required form group has a validation state that can be triggered by attempting to submit the form without
-              completing it.</p>
+
+            <h1 class="display-4 fw-bold lh-1 mb-3 brand-txt-green">Cyber Security for Organization Proposal</h1>
+            <p class="col-lg-10 fs-4 brand-txt-green-l">Cybercrime is the greatest threat to every company in the world.
+              Are you protected enough?</p>
           </div>
-         
+
+
         </div>
       </div>
     </div>
 
-    <!-- Marketing messaging and featurettes
-  ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
 
-      <!-- Three columns of text below the carousel -->
+    <div class="container marketing" style="margin-top:30px">
+      <h5>Services We Offer</h5>
+      <hr class="featurette-divider">
+
       <div class="row">
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
-            column.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <div class="icon-box">
+            <div class="icon"> <i class="bi-bricks"></i></div>
+            <h4 class="title"><a href="">Firewall Configuration</a></h4>
+            <p class="description">Firewall configuration involves configuring domain names and Internet Protocol (IP)
+              addresses and completing several other actions to keep firewalls secure.</p>
+          </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-          </p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <div class="icon-box">
+            <div class="icon"><i class="bi-broadcast-pin"></i></div>
+            <h4 class="title"><a href="">Router configuration</a></h4>
+            <p class="description">Router configuration involves setting up the basic network information, such as IP
+              addresses, subnets, gateway, and DNS. It also includes configuring advanced features such as VLANs,
+              Quality of Service (QoS), access control lists (ACLs), and security protocols.</p>
+          </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <div class="icon-box">
+            <div class="icon"> <i class="bi-diagram-3"></i></div>
+            <h4 class="title"><a href="">Swich configuration</a></h4>
+            <p class="description">This involves setting up the various options on a network switch to control the flow
+              of network data, manage VLANs, prioritize traffic, and ensure network security.</p>
+          </div>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
 
-      <!-- START THE FEATURETTES -->
+
+
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow
-              your mind.</span></h2>
-          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
-            here.</p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-        </div>
-      </div>
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for
-              yourself.</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
-            layout would work with some actual real-world content in place.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span>
-          </h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-            intended to be actually read, simply here to give you a better view of what this would look like with some
-            actual content. Your content.</p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
 
     </div><!-- /.container -->
 
 
     <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
-  </main>
 
+    <div class="push"></div>
+  </main>
+  <footer class="container-fluid footer-content">
+    <div class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; 2023 AGEIS &middot; </p>
+      <h5>You are Visitor No: <span class=" " id="userCount"></span></h5>
+    </div>
+
+  </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/login_services.js"></script>
 
 
 </body>
