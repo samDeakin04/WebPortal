@@ -5,9 +5,12 @@ const loginSubmitForm = async () => {
     console.log(formData)
     var logindata = await checkIsValid(formData);
     console.log(logindata)
-    if (logindata.statusCode == 200 && logindata.message == "Success") {
+    if (logindata.statusCode == 200 && logindata.message == "Success" && logindata.data.type == 0) {
         window.location.href = "/customer";
 
+    }
+    else if (logindata.statusCode == 200 && logindata.message == "Success" && logindata.data.type == 1){
+        window.location.href = "/admin";
     }
    else{alert('Incorrect Username or Password')}
     
@@ -23,11 +26,11 @@ const checkIsValid = async (collectionData) => {
     return test;
 }
 const getUserCount = async () => {
-    var test  =  await $.get('/webutil/count', null, (response) => {
-        console.log(response)
-    })
+    // var test  =  await $.get('/webutil/count', null, (response) => {
+    //     console.log(response)
+    // })
     
-    return await test;
+    // return await test;
 }
 $(function () {
 
@@ -36,11 +39,11 @@ $(function () {
     })
     //getProjects();
     var data = getUserCount();
-    $('#userCount').text(852)
+    $('#userCount').text(561)
     console.log(data)
     //$('.modal').modal();
 });
 let socket = io();
 socket.on('Number', (msg) => {
-    console.log('Random number: '+ msg);
+    //console.log('Random number: '+ msg);
 });

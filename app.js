@@ -4,10 +4,8 @@ var bodyParser = require('body-parser');
 var router = express.Router();
 var cors = require('cors');
 var path = __dirname + '/views';
-var loginRouter = require('./route/loginRoute')
-var incidentRouter = require('./route/incidentRoute')
-var billRouter = require('./route/billRoute')
-var faqRouter = require('./route/faqRoute')
+
+
 
 var userCount = require('./controller/login_controller')
 
@@ -15,9 +13,10 @@ var loginRouter = require('./route/loginRoute')
 var incidentRouter = require('./route/incidentRoute')
 var billRouter = require('./route/billRoute')
 var faqRouter = require('./route/faqRoute')
+var userRouter = require('./route/userRoute')
+
 
 var userCount = require('./controller/login_controller')
-
 
 const http = require('http');
 const server = http.createServer(app);
@@ -27,9 +26,7 @@ const io = new Server(server);
 io.on('connection', (socket)=> {
     console.log('a user connected');
 
-
     userCount.getUserCount();
-
 
     socket.on('disconnect',() => {
         console.log('user disconnected');
@@ -68,7 +65,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 router.get("/", function (req, res) {
     res.sendFile(path + "/welcome.html");
 });
-
 router.get("/faq", function (req, res) {
     res.sendFile(path + "/faq.html");
 });
@@ -84,6 +80,16 @@ router.get("/mybills", function (req, res) {
 router.get("/incidentreport", function (req, res) {
     res.sendFile(path + "/incidentReport.html");
 });
+router.get("/dummy", function (req, res) {
+    res.sendFile(path + "/dummy.html");
+});
+router.get("/admin", function (req, res) {
+    res.sendFile(path + "/admin_dashboard.html");
+});
+router.get("/customers", function (req, res) {
+    res.sendFile(path + "/customer.html");
+});
+
 
 app.use("/", router);
 app.use("/login", loginRouter);
@@ -91,7 +97,10 @@ app.use("/webutil", loginRouter);
 app.use("/incident", incidentRouter);
 app.use("/bill", billRouter);
 app.use("/faq", faqRouter);
-
+app.use("/adminpages", userRouter);
+if(!module.parent){
 server.listen(3000, function () {
     console.log("Live at Port 3000");
 });
+}
+module.exports = server; // for testing

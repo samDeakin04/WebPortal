@@ -1,28 +1,3 @@
-html,
-body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-body{
-    background: #f6f9ff;
-}
-main {
-    min-height: 100%;
-    margin-bottom: -200px;
-}
-
-.push {
-    height: 200px
-}
-
-.footer-content {
-    padding-top: 85px;
-    height: 200px;
-    background-color: #484848;
-    background-image: url(../img/footer_img.png);
-    color: #ffffff;
-}
 
 html,
 body {
@@ -49,7 +24,6 @@ main {
     background-image: url(../img/footer_img.png);
     color: #ffffff;
 }
-
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -57,7 +31,6 @@ main {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-
 }
 
 
@@ -69,13 +42,11 @@ main {
 
 
 .b-example-divider {
-
     height: 3rem;
     background-color: rgba(0, 0, 0, .1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-
 }
 
 
@@ -92,12 +63,10 @@ main {
 
 
 .nav-scroller {
-
     position: relative;
     z-index: 2;
     height: 2.75rem;
     overflow-y: hidden;
-
 }
 
 
@@ -311,4 +280,31 @@ footer h5 {
     margin-bottom: 15px;
     padding-bottom: 5px;
   }
-
+  .tableAction {
+    font-size: 20px;
+    padding: 3px;
+    background: #00b789;
+    border-radius: 4px;
+    margin-right: 3px;
+    line-height: 14px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+.uactiondelete {
+    background: #e82c2c;
+}
+.datatable{
+    font-size: 14px;
+}
+.datatable .label{
+    background: #26a1ea;
+    padding: 1px 6px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+.adduser{
+    margin-left:10px;
+    padding: 2px 3px;
+    font-size: 12px;
+}
